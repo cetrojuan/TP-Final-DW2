@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" /><path d="M7 20h10" /><path d="M9 16v4" /><path d="M15 16v4" /></svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">CATALOGO</a></li>
+                <li><a href="#">PERFIL</a></li>
+            </ul>
+        </nav>
+        <div class="carrito-container">
+            <button class="carrito" id="toggleCarrito">
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+            </button>
+            <div id="carritoDropdown" class="carrito-dropdown oculto">
+                <h3>CARRITO</h3>
+                <ul id="carritoLista" class="carrito-lista">
+                    <li>No hay nada aqui...</li>
+                </ul>
+                <div id="total">
+                    <h4>Total: $ 0</h4>
+                </div>
+                <button class="comprar" id="btn-comprar">COMPRAR</button>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="presentacion">
+            <h2>Los Mejores Precios de las Mejores Marcas</h2>
+        </section>
+        <section class="productos" id="productos">
+            <h2 class="titulo">PRODUCTOS</h2>
+            <div class="productos-screen" id="displayProductos"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="marcas">
+            <img src="img/nvidia.png">
+            <img src="img/intel.png">
+        </div>
+        <div class="informacion">
+            <ul>
+                <li>NOSOTROS</li>
+                <li>SPONSORS</li>
+                <li>UNITE</li>
+                <li>REDES</li>
+                <li>SUCURSALES</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
